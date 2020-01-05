@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "first post"
+---
+
 $f(x,\theta)$中的$\theta$是参数，另一类用来定义模型结构或权重的称为超参数hyper-parameter，超参数可以理解为参数的参数，比如
 
 $$L(y, f(x,\theta))+\lambda|L_1|$$

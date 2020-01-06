@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-06T20:39:09+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">yuhangxiao’s blog</title><subtitle>Sometimes it's the very people who no one imagines anything of who do the things that no one can imagine. </subtitle><entry><title type="html">markdown</title><link href="http://localhost:4000/jekyll/update/2020/01/06/firstpost.html" rel="alternate" type="text/html" title="markdown" /><published>2020-01-06T20:29:06+08:00</published><updated>2020-01-06T20:29:06+08:00</updated><id>http://localhost:4000/jekyll/update/2020/01/06/firstpost</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/01/06/firstpost.html">&lt;head&gt;
+    &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;h1 id=&quot;chapter-1-vector-spaces&quot;&gt;Chapter 1, Vector Spaces&lt;/h1&gt;
+
+&lt;p&gt;概要：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;复数及其性质&lt;/li&gt;
+  &lt;li&gt;$R^n$和$C^n$&lt;/li&gt;
+  &lt;li&gt;vector spaces&lt;/li&gt;
+  &lt;li&gt;subspaces&lt;/li&gt;
+  &lt;li&gt;sum and direct sum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;复数定义：有序对(a, b )，记做a+bi;&lt;/p&gt;
+
+&lt;p&gt;复数运算性质：交换律，结合律，恒等率，加法逆元，乘法逆元，乘法分配率；&lt;/p&gt;
+
+&lt;p&gt;-a, subtraction , 1/a, division 定义；&lt;/p&gt;
+
+&lt;p&gt;Notation F: denotes R or C，之所以用F是因为R和C都是域Field的概念，R和C都是标量scalars，用于强调是数字，区别于向量vector；&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;: list length&lt;/p&gt;
+
+&lt;p&gt;​	一个长度为n的list是一个包含n个元素的有序集合，这些元素可以是数字、list或其他抽象元素。list形式下：&lt;/p&gt;
+
+&lt;p&gt;​	$(x_1,x_2,\dots,x_n)$	两个list，当且仅当长度相等且对应位置元素相等时才相等。长度为n的list也可以叫做元组&lt;/p&gt;
+
+&lt;p&gt;​	list一定是有限长度的，无限长度的不能称为list&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello jekll&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Chapter 1, Vector Spaces</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/01/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-01-06T20:02:06+08:00</published><updated>2020-01-06T20:02:06+08:00</updated><id>http://localhost:4000/jekyll/update/2020/01/06/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/01/06/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

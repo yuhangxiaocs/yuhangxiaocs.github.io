@@ -21,7 +21,7 @@
 title: yuhangxiao's blog
 email: yuhangxiaocs@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Sometimes it's the very people who no one imagines anything of who do the things that no one can imagine. 
+  Just do it. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -31,6 +31,14 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+  
+paginate: 8  
+paginate_path: "page:num"
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
